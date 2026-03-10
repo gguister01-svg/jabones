@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-body: "Nunito", sans-serif;
+  
+  --color-background: #FAF9F6;
+  --color-foreground: #2D2727;
+  --color-primary: #E6A4B4;
+  --color-primary-foreground: #FFFFFF;
+  --color-secondary: #C5A358;
+  --color-secondary-foreground: #3E3213;
+  --color-accent: #F3EEEA;
+  --color-accent-foreground: #2D2727;
+  --color-destructive: #D86B6B;
+  --color-destructive-foreground: #FFFFFF;
+  --color-border: rgba(0, 0, 0, 0.05);
+  --color-card: #FFFFFF;
+  --color-card-foreground: #2D2727;
+  --color-muted: #F8F7F4;
+  --color-muted-foreground: #7C7373;
+}
+
+@utility text-gradient-gold {
+  background: linear-gradient(135deg, #C5A358 0%, #E8D2A6 50%, #C5A358 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility bg-gradient-gold {
+  background: linear-gradient(135deg, #C5A358 0%, #E8D2A6 50%, #C5A358 100%);
+}
+
+@utility bg-gradient-rose {
+  background: linear-gradient(135deg, #E6A4B4 0%, #F3D7CA 100%);
+}
+
+@utility bg-gradient-warm {
+  background: linear-gradient(to bottom, #FAF9F6, #FFFFFF);
+}
+
+@utility shadow-gold {
+  box-shadow: 0 10px 25px -5px rgba(197, 163, 88, 0.2), 0 8px 10px -6px rgba(197, 163, 88, 0.1);
+}
+
+@utility shadow-3d {
+  box-shadow: 
+    0 1px 1px rgba(0,0,0,0.05), 
+    0 2px 2px rgba(0,0,0,0.05), 
+    0 4px 4px rgba(0,0,0,0.05), 
+    0 8px 8px rgba(0,0,0,0.05),
+    0 16px 16px rgba(0,0,0,0.05);
+}
+
+@utility shadow-soft {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.04);
+}
+
+@utility shadow-card {
+  box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@utility text-gold-foreground {
+  color: #3E3213;
+}
+
+@utility animate-bounce-subtle {
+  animation: bounce-subtle 4s ease-in-out infinite;
+}
+
+@utility animate-pulse-slow {
+  animation: pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(-3%); }
+  50% { transform: translateY(0); }
+}
+
+:root {
+  --gradient-hero: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+}
